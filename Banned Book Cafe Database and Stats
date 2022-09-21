@@ -1,0 +1,21 @@
+CREATE TABLE bannedbook_cafe (id INTEGER PRIMARY KEY, book_title TEXT, genre TEXT, number_of_states_banned INTEGER, customer_rating INTEGER, pricebyhour INTEGER); 
+
+INSERT INTO bannedbook_cafe VALUES (1, "Maus", "Historical Fiction", 25, 4.5, 2);
+INSERT INTO bannedbook_cafe VALUES (2, "Gender Queer", "LGBTQIA", 38, 4, 3);
+INSERT INTO bannedbook_cafe VALUES (3, "The Hate You Give", "Social Justice", 30, 4.8, 2);
+INSERT INTO bannedbook_cafe VALUES (4, "The Bluest Eye", "Fantasy", 20, 3.8, 2);
+INSERT INTO bannedbook_cafe VALUES (5, "The Call of the Wild", "Historical Fiction", 18, 4.5, 1);
+INSERT INTO bannedbook_cafe VALUES (6, "To Kill a Mockingbird", "Historical Fiction", 32, 4, 1);
+INSERT INTO bannedbook_cafe VALUES (7, "Out of Darkness", "Romance", 23, 4.2, 2);
+INSERT INTO bannedbook_cafe VALUES (8, "Where the Wild Things Are", "Childrens", 17, 4.7, 1);
+INSERT INTO bannedbook_cafe VALUES (9, "The Giver", "Fantasy", 34, 4.5, 1);
+INSERT INTO bannedbook_cafe VALUES (10, "All Boys Aren't Blue", "LGBTQIA", 42, 4.8, 2);
+INSERT INTO bannedbook_cafe VALUES (11, "George", "LGBTQIA", 39, 4.2, 2);
+INSERT INTO bannedbook_cafe VALUES (12, "Stamped", "Social Justice", 35, 5, 2);
+INSERT INTO bannedbook_cafe VALUES (13, "James and the Giant Peach", "Childrens", 12, 3.9, 1);
+INSERT INTO bannedbook_cafe VALUES (14, "Lawn Boy", "Social Justice", 35, 4.3, 2);
+INSERT INTO bannedbook_cafe VALUES (15, "Harry Potter", "Fantasy", 19, 4.5, 2);
+
+SELECT * FROM bannedbook_cafe ORDER BY genre;
+SELECT * FROM bannedbook_cafe ORDER by pricebyhour;
+SELECT AVG(customer_rating) FROM bannedbook_cafe;
